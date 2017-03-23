@@ -13,7 +13,7 @@ git clone https://github.com/dro248/runAyamel
 echo
 echo "3. Getting secret..."
 
-apt-get install sshpass
+sudo apt-get install sshpass
 sshpass -p $APPLICATION_CREDENTIALS scp arclite@sartre4.byu.edu:~/application.conf ./AyamelDockerfile
 
 echo
