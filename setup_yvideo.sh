@@ -12,7 +12,8 @@ git clone https://github.com/dro248/runAyamel
 
 echo
 echo "3. Getting secret..."
-scp arclite@sartre4.byu.edu:~/application.conf ./AyamelDockerfile
+
+sshpass -p $APPLICATION_CREDENTIALS scp arclite@sartre4.byu.edu:~/application.conf ./AyamelDockerfile
 
 echo
 echo "4. Making space for database..."
