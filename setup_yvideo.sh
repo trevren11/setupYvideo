@@ -1,6 +1,8 @@
 #!/bin/bash
 
 echo "1. Making Directories..."
+pwd
+ls -al
 cd ~
 mkdir -p Docker/ && cd Docker
 
@@ -13,8 +15,12 @@ git clone https://github.com/dro248/runAyamel
 echo
 echo "3. Getting secret..."
 
-mv BYU-ODH/Ayamel/conf/application.conf ./AyamelDockerfile
+mv /home/travis/build/BYU-ODH/Ayamel/conf/application.conf ./AyamelDockerfile
+echo "Current Directory"
+pwd
 ls -al 
+echo "Up one Directory"
+ls ../ -al 
 
 echo
 echo "4. Making space for database..."
